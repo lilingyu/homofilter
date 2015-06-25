@@ -58,6 +58,7 @@
 		4336C1F51B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336C1C11B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib */; };
 		4336C1F61B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336C1C21B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib */; };
 		4336C1F71B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336C1C31B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib */; };
+		4336C1FA1B3A7CE6003EDB16 /* homo_filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4336C1F81B3A7CE6003EDB16 /* homo_filter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,6 +128,8 @@
 		4336C1C31B3A77F6003EDB16 /* libopencv_videostab.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.0.0.dylib; path = ../../../../../usr/local/lib/libopencv_videostab.3.0.0.dylib; sourceTree = "<group>"; };
 		4336C1C41B3A77F6003EDB16 /* pkgconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pkgconfig; path = ../../../../../usr/local/lib/pkgconfig; sourceTree = "<group>"; };
 		4336C1C51B3A77F6003EDB16 /* python2.7 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python2.7; path = ../../../../../usr/local/lib/python2.7; sourceTree = "<group>"; };
+		4336C1F81B3A7CE6003EDB16 /* homo_filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homo_filter.cpp; sourceTree = "<group>"; };
+		4336C1F91B3A7CE6003EDB16 /* homo_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homo_filter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				4336C18B1B3A7705003EDB16 /* main.cpp */,
+				4336C1F81B3A7CE6003EDB16 /* homo_filter.cpp */,
+				4336C1F91B3A7CE6003EDB16 /* homo_filter.h */,
 			);
 			path = hello_opencv;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4336C1FA1B3A7CE6003EDB16 /* homo_filter.cpp in Sources */,
 				4336C18C1B3A7705003EDB16 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
