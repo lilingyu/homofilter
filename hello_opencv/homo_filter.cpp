@@ -131,7 +131,6 @@ void my_HomoFilter(Mat srcImg, Mat &dst)
     
     srcImg.convertTo(srcImg, CV_64FC1);
     dst.convertTo(dst, CV_64FC1);
-    //imshow("src:", srcImg);
     //1. ln
     for (int i = 0; i < srcImg.rows; i++)
     {
@@ -148,7 +147,7 @@ void my_HomoFilter(Mat srcImg, Mat &dst)
     //2. dct
     Mat mat_dct = Mat::zeros(srcImg.rows, srcImg.cols, CV_64FC1);
     dct(srcImg, mat_dct);
-    //imshow("dct", mat_dct);
+    imshow("dct", mat_dct);
     
     //3. linear filter
     Mat H_u_v;
