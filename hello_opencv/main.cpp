@@ -56,7 +56,7 @@ int main(int argc, const char * argv[])
 #if 1
     int frames = 1;
     
-    char fp_str[200] = "/Users/lilingyu1/Documents/video_enhance/data/dark_1136x1136.yuv";
+    char fp_str[200] = "/Users/lilingyu1/Documents/dark_1136x1136.yuv";
     
     width = 1136;
     height = 1136;
@@ -201,7 +201,7 @@ int main(int argc, const char * argv[])
 
     
     
-    Mat src_mat = imread("/Users/lilingyu1/Documents/video_enhance/data/dark_1136x1136.jpg", 0);
+    Mat src_mat = imread("/Users/lilingyu1/Documents/dark_1136x1136.jpg", 0);//
     imshow("src:", src_mat);
     Mat dst_mat(src_mat.rows, src_mat.cols, src_mat.type());
     //HomoFilter(src_mat, dst_mat);

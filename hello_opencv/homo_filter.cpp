@@ -142,7 +142,6 @@ void my_HomoFilter(Mat srcImg, Mat &dst)
         }
     }
     
-#if 1
     //spectrum
     //2. dct
     Mat mat_dct = Mat::zeros(srcImg.rows, srcImg.cols, CV_64FC1);
@@ -177,24 +176,11 @@ void my_HomoFilter(Mat srcImg, Mat &dst)
 
     //imshow("before filter", mat_dct);
 
-    /*
-    for (int i = 0; i < srcImg.rows; i++)
-    {
-        double* srcdata = mat_dct.ptr<double>(i);
-        double* filtdata = H_u_v.ptr<double>(i);
-        for (int j = 0; j < srcImg.cols; j++)
-        {
-            srcdata[j] = srcdata[j]*filtdata[j];
-            //srcdata[j] = srcdata[j]*1;
-
-        }
-    }*/
     mat_dct = mat_dct.mul(H_u_v);
     //Mat tmp = mat_dct.mul(H_u_v);
     //tmp.copyTo(mat_dct);
     //4. idct
     idct(mat_dct, dst);
-#endif
     
 #if 0
     //spatial high high pass filter
