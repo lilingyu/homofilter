@@ -1,0 +1,5 @@
+#homofilter
+This demo project is to enhance picture using homo filter.
+Enviroment: mac xcode, opencv.
+
+It just do homo filter on Y component and leave UV alone. Combine the YUV components and you will get a colorful image.
